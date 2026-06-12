@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class InventoryLog extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id', 'data_barang_id', 'action', 'changes',
+    ];
+
+    protected $casts = [
+        'changes' => 'array',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function dataBarang()
+    {
+        return $this->belongsTo(DataBarang::class, 'data_barang_id');
+    }
+}

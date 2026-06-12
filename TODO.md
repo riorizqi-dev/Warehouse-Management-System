@@ -1,0 +1,4 @@
+- [x] Fix visibility of "Daftar" title in register form
+- [x] Adjust position of "SELAMAT DATANG!" welcome text
+- [x] Ensure "Sudah punya akun? Masuk" button is visible
+- [x] Test the register page after changes (server started, browser tool disabled but changes applied)

@@ -1,0 +1,82 @@
+===========================================
+   DAFTAR AKUN LOGIN SISTEM GUDANG ELEKTRONIK
+===========================================
+
+SUPERADMIN (Akses Penuh):
+---------------------------
+Email    : superadmin@thevoid.com
+Username : superadmin
+Password : superadmin123
+Role     : superadmin
+
+Fitur:
+- CRUD semua data inventaris
+- Manajemen akun (buat/edit/hapus/ubah role)
+- Feature toggles (on/off fitur)
+- Lihat semua audit/log
+- Restore soft-deleted data
+- Bulk delete (jika toggle aktif)
+
+
+ADMIN (Operasional Inti):
+--------------------------
+Email    : admin@thevoid.com
+Username : admin
+Password : admin123
+Role     : admin
+
+Fitur:
+- Master data barang/kategori/customer
+- Monitoring pesanan, gudang, pengiriman, laporan
+- TIDAK bisa manajemen akun
+- TIDAK bisa toggle fitur
+
+
+STAFF GUDANG:
+--------------
+Email    : gudang@thevoid.com
+Username : staffgudang
+Password : gudang123
+Role     : staff_gudang
+
+Fitur:
+- Proses picking, packing, barang masuk/keluar, stok
+- Lihat pesanan operasional
+- TIDAK bisa manajemen akun
+
+
+STAFF PENJUALAN / CS:
+----------------------
+Email    : cs@thevoid.com
+Username : staffcs
+Password : cs123456
+Role     : staff_penjualan
+
+Fitur:
+- Kelola customer
+- Input order + reserve/reject order
+- Monitoring status order
+
+
+KURIR / PENGIRIMAN:
+--------------------
+Email    : kurir@thevoid.com
+Username : kurir
+Password : kurir123
+Role     : kurir
+
+Fitur:
+- Akses modul pengiriman
+- Update status shipped / delivered
+
+
+===========================================
+CARA MENGGUNAKAN:
+===========================================
+1. Jalankan seeder: php artisan db:seed --class=UserSeeder
+2. Atau jalankan semua: php artisan migrate:fresh --seed
+3. Login dengan email di atas
+
+
+===========================================
+

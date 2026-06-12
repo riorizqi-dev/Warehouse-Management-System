@@ -1,0 +1,47 @@
+﻿erDiagram
+    users ||--o{ data_barangs : creates
+    kategori_barangs ||--o{ data_barangs : classifies
+    users ||--o{ inventory_logs : writes
+    data_barangs ||--o{ inventory_logs : tracked_in
+
+    users {
+        bigint id PK
+        string name
+        string username UK
+        string email UK
+        string password
+        string role
+        timestamp email_verified_at
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    kategori_barangs {
+        bigint id PK
+        string nama_kategori
+        text deskripsi
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    data_barangs {
+        bigint id PK
+        bigint user_id FK
+        string nama_barang
+        int stok
+        decimal harga
+        string foto_barang
+        bigint kategori_id FK
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    inventory_logs {
+        bigint id PK
+        bigint user_id FK
+        bigint data_barang_id FK
+        string action
+        json changes
+        timestamp created_at
+        timestamp updated_at
+    }
