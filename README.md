@@ -1,66 +1,399 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Warehouse Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A comprehensive web-based warehouse and inventory management system built with Laravel, designed to streamline operations for warehouses, sales teams, and customers. This system features multi-role access control, real-time inventory tracking, order management, and a customer-facing portal for online ordering.
 
-## About Laravel
+## 🌟 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🔐 Multi-Role Authentication System
+- **Super Admin**: Full system control with feature toggles and user management
+- **Admin**: Comprehensive warehouse and sales management
+- **Staff Gudang (Warehouse Staff)**: Inventory management, stock operations, order fulfillment
+- **Staff Penjualan (Sales/CS)**: Customer management, order processing, sales operations
+- **Kurir (Courier)**: Shipping and delivery management
+- **Customer**: Self-service portal for browsing and ordering products
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 📦 Inventory & Product Management
+- **Product Master Data**: Complete product information with images, categories, pricing, and specifications
+- **Category Management**: Organize products with hierarchical categories
+- **Stock Tracking**: Real-time stock levels with minimum stock alerts
+- **Stock Movements**: Automated logging of all stock in/out operations
+- **Stock Reservations**: Automatic stock reservation for pending orders
+- **Warehouse Location**: Track products by rack/bin locations
+- **Product Specifications**: Support for electronic products with warranty information
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🛒 Order Management System
+- **Multi-Channel Orders**: Support for both admin-created and customer portal orders
+- **Order Workflow States**:
+  - Pending → Waiting Restock → Reserved → Picking → Packed → Shipped → Completed
+- **Payment Management**: Upload and verify payment proofs
+- **Order Approval**: Multi-stage approval process
+- **Order Tracking**: Real-time order status updates
+- **Inventory Integration**: Automatic stock deduction and reservation
 
-## Learning Laravel
+### 👥 Customer Management
+- **Customer Portal**: Self-service interface for customers
+- **Product Catalog**: Browse products with search and category filters
+- **Shopping Cart**: Full cart functionality with quantity management
+- **Checkout Process**: Streamlined ordering with payment proof upload
+- **Order History**: Track all orders with detailed status
+- **Notifications**: Real-time updates on order status changes
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 📊 Reporting & Analytics
+- **Inventory Reports**: Stock levels, movement history, and analytics
+- **Stock Summary Dashboard**: 
+  - Total items and stock quantities
+  - Reserved stock tracking
+  - Available stock calculations
+  - Low stock alerts
+- **Order Reports**: Sales and fulfillment analytics
+- **Export Functions**: PDF and Excel exports for reports
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🤖 AI-Powered Chatbot
+- **FAQ System**: Manage frequently asked questions
+- **Chatbot Integration**: AI-powered customer support (via API integration)
+- **Chat Logging**: Track all chatbot interactions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### ⚙️ Dynamic Feature Toggles
+- **Feature Management**: Enable/disable features without code deployment
+- **Role-Based Access**: Control feature access per user role
+- **Dynamic Sidebar**: Automatically show/hide menu items based on enabled features
+- **Supported Toggles**:
+  - Data Barang (Product Management)
+  - Kategori Barang (Category Management)
+  - Laporan Barang (Inventory Reports)
+  - Custom feature pages
 
-## Laravel Sponsors
+### 🔔 Notification System
+- **User Notifications**: Real-time updates for order changes
+- **Customer Alerts**: Notify customers of order status updates
+- **Staff Notifications**: Alert warehouse and sales teams of new orders
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🔒 Security Features
+- **Role-Based Access Control (RBAC)**: Granular permissions per role
+- **Route Middleware Protection**: Feature and role-based route guards
+- **Authentication**: Laravel Breeze integration
+- **Session Management**: Secure user sessions
 
-### Premium Partners
+## 🛠️ Technology Stack
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Backend
+- **Framework**: Laravel 10.x
+- **PHP**: 8.1+
+- **Database**: MySQL
+- **Authentication**: Laravel Breeze
+- **API Token**: Laravel Sanctum
 
-## Contributing
+### Frontend
+- **Template Engine**: Blade
+- **CSS Framework**: Mazer Admin Dashboard Template
+- **JavaScript**: Vanilla JS with modern features
+- **Icons**: Bootstrap Icons
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Key Packages
+- **barryvdh/laravel-dompdf**: PDF generation for reports
+- **maatwebsite/excel**: Excel export functionality
+- **guzzlehttp/guzzle**: HTTP client for external API integration
 
-## Code of Conduct
+## 📁 Project Architecture
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+TheVoid/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── AdminController.php
+│   │   │   ├── ChatbotController.php
+│   │   │   ├── CustomerController.php
+│   │   │   ├── CustomerPortalController.php
+│   │   │   ├── DataBarangController.php
+│   │   │   ├── FaqController.php
+│   │   │   ├── FeaturePageController.php
+│   │   │   ├── FeatureToggleController.php
+│   │   │   ├── InventoryLogController.php
+│   │   │   ├── KategoriBarangController.php
+│   │   │   ├── LaporanController.php
+│   │   │   ├── OrderController.php
+│   │   │   ├── UserManagementController.php
+│   │   │   └── Auth/
+│   │   └── Middleware/
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── DataBarang.php
+│   │   ├── KategoriBarang.php
+│   │   ├── Order.php
+│   │   ├── OrderItem.php
+│   │   ├── Customer.php
+│   │   ├── BarangKeluar.php
+│   │   ├── BarangKeluarItem.php
+│   │   ├── Pengiriman.php
+│   │   ├── StockReservation.php
+│   │   ├── StockMovement.php
+│   │   ├── InventoryLog.php
+│   │   ├── FeatureToggle.php
+│   │   ├── Faq.php
+│   │   ├── ChatbotLog.php
+│   │   └── UserNotification.php
+│   ├── Services/
+│   │   ├── NotificationService.php
+│   │   └── StockMovementService.php
+│   └── Helpers/
+│       └── helpers.php
+├── database/
+│   └── migrations/
+├── resources/
+│   └── views/
+│       ├── admin/          # Admin panel views
+│       ├── customer/       # Customer portal views
+│       ├── auth/           # Authentication views
+│       ├── data-barang.blade.php
+│       ├── kategori-barang.blade.php
+│       ├── laporan.blade.php
+│       └── dashboard.blade.php
+└── routes/
+    ├── web.php
+    ├── api.php
+    └── auth.php
+```
 
-## Security Vulnerabilities
+## 📸 Screenshots
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Admin Dashboard
+![Dashboard](screenshots/dashboard.png)
+*Main dashboard showing key metrics and quick actions*
 
-## License
+### Login Page
+![Login](screenshots/login.png)
+*Secure authentication interface*
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Product Management
+![Products](screenshots/products.png)
+*Comprehensive product management with stock tracking*
+
+### Inventory Overview
+![Inventory](screenshots/inventory.png)
+*Real-time inventory monitoring with stock levels*
+
+### Stock In Operation
+![Stock In](screenshots/stock-in.png)
+*Add new stock to inventory*
+
+### Stock Out Operation
+![Stock Out](screenshots/stock-out.png)
+*Process stock outgoing transactions*
+
+### User Management
+![Users](screenshots/users.png)
+*Manage system users and roles*
+
+### Reports
+![Reports](screenshots/reports.png)
+*Generate comprehensive inventory and sales reports*
+
+## 🚀 Installation
+
+### Prerequisites
+- PHP 8.1 or higher
+- Composer
+- MySQL 5.7 or higher
+- Node.js & NPM (for asset compilation)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/riorizqi-dev/Warehouse-Management-System.git
+cd Warehouse-Management-System
+```
+
+### Step 2: Install Dependencies
+```bash
+# Install PHP dependencies
+composer install
+
+# Install Node dependencies
+npm install
+```
+
+### Step 3: Environment Configuration
+```bash
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+```
+
+### Step 4: Database Setup
+Edit `.env` file with your database credentials:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=inventaris_barang
+DB_USERNAME=root
+DB_PASSWORD=your_password
+```
+
+Create the database:
+```bash
+mysql -u root -p
+CREATE DATABASE inventaris_barang;
+exit;
+```
+
+Run migrations:
+```bash
+php artisan migrate
+```
+
+### Step 5: Storage Setup
+```bash
+# Create storage symlink
+php artisan storage:link
+```
+
+### Step 6: Compile Assets
+```bash
+npm run build
+```
+
+### Step 7: Run the Application
+```bash
+php artisan serve
+```
+
+Visit `http://localhost:8000` in your browser.
+
+### Default Admin Credentials
+After running migrations, create a super admin:
+```bash
+php artisan tinker
+```
+```php
+\App\Models\User::create([
+    'name' => 'Super Admin',
+    'username' => 'superadmin',
+    'email' => 'admin@warehouse.com',
+    'password' => bcrypt('password'),
+    'role' => 'superadmin',
+    'email_verified_at' => now()
+]);
+```
+
+## 📖 Usage Guide
+
+### For Administrators
+
+1. **Managing Products**
+   - Navigate to "Data Barang" menu
+   - Add products with details, images, and categories
+   - Set minimum stock levels for alerts
+   - Assign warehouse locations
+
+2. **Processing Orders**
+   - View incoming orders in "Orders" menu
+   - Approve/reject orders
+   - Verify payment proofs
+   - Track order fulfillment stages
+
+3. **Managing Users**
+   - Access "User Management" (Super Admin only)
+   - Create users with appropriate roles
+   - Assign permissions based on responsibilities
+
+4. **Feature Toggles**
+   - Enable/disable system features dynamically
+   - Control access per user role
+   - Add custom feature pages
+
+### For Warehouse Staff
+
+1. **Stock Management**
+   - Monitor stock levels in real-time
+   - Process stock in/out operations
+   - Track stock movements and reservations
+   - Pick and pack orders
+
+2. **Order Fulfillment**
+   - View orders with "reserved" status
+   - Start picking process
+   - Mark orders as packed
+   - Hand off to shipping
+
+### For Sales Staff
+
+1. **Customer Management**
+   - Add and manage customer records
+   - Create orders on behalf of customers
+   - Process payments and verifications
+
+2. **Order Processing**
+   - Create new orders
+   - Approve pending orders
+   - Verify payment proofs
+   - Handle customer inquiries
+
+### For Customers
+
+1. **Shopping**
+   - Browse product catalog
+   - Search and filter products
+   - Add items to cart
+   - Proceed to checkout
+
+2. **Order Tracking**
+   - View order history
+   - Track current orders
+   - Upload payment proofs
+   - Confirm delivery receipt
+
+## 🔮 Future Improvements
+
+### Planned Features
+- [ ] **Barcode Integration**: Barcode scanning for faster stock operations
+- [ ] **Multi-Warehouse Support**: Manage multiple warehouse locations
+- [ ] **Advanced Analytics**: Data visualization with charts and trends
+- [ ] **Email Notifications**: Automated email alerts for order updates
+- [ ] **SMS Integration**: SMS notifications for critical updates
+- [ ] **Mobile Application**: Native iOS/Android apps
+- [ ] **API Documentation**: RESTful API for third-party integrations
+- [ ] **Supplier Management**: Track suppliers and purchase orders
+- [ ] **Return Management**: Handle product returns and refunds
+- [ ] **Batch Operations**: Bulk import/export of products
+- [ ] **Audit Trail**: Comprehensive activity logging
+- [ ] **Inventory Forecasting**: AI-powered stock predictions
+- [ ] **Multi-Currency Support**: International sales capability
+- [ ] **Invoice Generation**: Automated invoice creation
+- [ ] **Reporting Dashboard**: Advanced BI dashboards
+
+### Technical Enhancements
+- [ ] Redis caching for improved performance
+- [ ] Queue system for background jobs
+- [ ] Automated testing suite (Unit & Feature tests)
+- [ ] Docker containerization
+- [ ] CI/CD pipeline setup
+- [ ] Database optimization and indexing
+- [ ] Real-time updates with WebSockets
+- [ ] Progressive Web App (PWA) support
+
+## 👨‍💻 Author
+
+**Rio Rizqi Saputra**
+
+- GitHub: [@riorizqi-dev](https://github.com/riorizqi-dev)
+- Email: riorizqi918@gmail.com
+- Portfolio: [github.com/riorizqi-dev](https://github.com/riorizqi-dev)
+
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/riorizqi-dev/Warehouse-Management-System/issues).
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+**Built with ❤️ using Laravel**
