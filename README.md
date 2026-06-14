@@ -155,12 +155,6 @@ TheVoid/
     └── auth.php
 ```
 
-## 🚀 Demo
-
-> **🔗 [Live Demo](https://your-demo-url.com)** — Klik untuk langsung coba aplikasi!
-
-> **Note:** Login pakai akun admin atau buat akun baru di halaman registrasi.
-
 ## 🚀 Installation
 
 ### Prerequisites
