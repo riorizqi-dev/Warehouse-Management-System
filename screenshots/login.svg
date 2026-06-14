@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1219"/><stop offset="1" stop-color="#1a1f2e"/></linearGradient>
+    <filter id="lsh"><feDropShadow dx="0" dy="4" stdDeviation="24" flood-color="#000" flood-opacity="0.5"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#lbg)"/>
+  <rect x="0" y="0" width="640" height="720" fill="#11151e"/>
+  <rect x="100" y="260" width="44" height="44" rx="10" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="1.5"/>
+  <polygon points="112,268 128,278 112,288 96,278" fill="none" stroke="#f97316" stroke-width="2"/>
+  <line x1="112" y1="268" x2="112" y2="288" stroke="#f97316" stroke-width="2"/>
+  <line x1="96" y1="278" x2="128" y2="278" stroke="#f97316" stroke-width="1.5"/>
+  <text x="160" y="280" fill="#e8edf5" font-family="Segoe UI,sans-serif" font-size="22" font-weight="bold">RakElektronik</text>
+  <text x="100" y="320" fill="#9ca8b8" font-family="Segoe UI,sans-serif" font-size="14">Sistem Manajemen Gudang Elektronik</text>
+  <text x="100" y="360" fill="#5a6a7e" font-family="Segoe UI,sans-serif" font-size="13">Kelola stok, pesanan, dan pengiriman barang</text>
+  <text x="100" y="380" fill="#5a6a7e" font-family="Segoe UI,sans-serif" font-size="13">elektronik dalam satu platform terintegrasi.</text>
+  <rect x="100" y="420" width="16" height="16" rx="4" fill="#22c55e"/>
+  <text x="126" y="434" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13">Multi-role access control</text>
+  <rect x="100" y="450" width="16" height="16" rx="4" fill="#3b82f6"/>
+  <text x="126" y="464" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13">Real-time inventory tracking</text>
+  <rect x="100" y="480" width="16" height="16" rx="4" fill="#f97316"/>
+  <text x="126" y="494" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13">Order management workflow</text>
+  <rect x="100" y="510" width="16" height="16" rx="4" fill="#a855f7"/>
+  <text x="126" y="524" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13">Customer self-service portal</text>
+  <rect x="740" y="110" width="460" height="500" rx="20" fill="#1c2434" filter="url(#lsh)" stroke="#2a3348" stroke-width="1"/>
+  <text x="970" y="180" text-anchor="middle" fill="#e8edf5" font-family="Segoe UI,sans-serif" font-size="26" font-weight="bold">Selamat Datang</text>
+  <text x="970" y="210" text-anchor="middle" fill="#9ca8b8" font-family="Segoe UI,sans-serif" font-size="14">Masuk ke sistem manajemen gudang</text>
+  <text x="780" y="260" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600">Username / Email</text>
+  <rect x="780" y="272" width="380" height="44" rx="8" fill="#141a26" stroke="#2a3348" stroke-width="1.5"/>
+  <text x="800" y="300" fill="#5a6a7e" font-family="Segoe UI,sans-serif" font-size="13">Masukkan username atau email...</text>
+  <text x="780" y="348" fill="#c7d0df" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600">Kata Sandi</text>
+  <rect x="780" y="360" width="380" height="44" rx="8" fill="#141a26" stroke="#2a3348" stroke-width="1.5"/>
+  <circle cx="1110" cy="383" r="4" fill="#5a6a7e"/>
+  <circle cx="1122" cy="383" r="4" fill="#5a6a7e"/>
+  <circle cx="1098" cy="383" r="4" fill="#5a6a7e"/>
+  <circle cx="1086" cy="383" r="4" fill="#5a6a7e"/>
+  <rect x="780" y="426" width="16" height="16" rx="4" fill="#f97316"/>
+  <text x="804" y="440" fill="#9ca8b8" font-family="Segoe UI,sans-serif" font-size="12">Ingat saya</text>
+  <text x="1074" y="440" fill="#f97316" font-family="Segoe UI,sans-serif" font-size="12">Lupa password?</text>
+  <rect x="780" y="466" width="380" height="46" rx="8" fill="#f97316"/>
+  <text x="970" y="494" text-anchor="middle" fill="#fff" font-family="Segoe UI,sans-serif" font-size="15" font-weight="bold">Masuk</text>
+  <text x="970" y="555" text-anchor="middle" fill="#5a6a7e" font-family="Segoe UI,sans-serif" font-size="13">Belum punya akun? <tspan fill="#f97316">Hubungi Admin</tspan></text>
+  <text x="970" y="590" text-anchor="middle" fill="#3a4a5e" font-family="Segoe UI,sans-serif" font-size="11">RakElektronik &copy; 2026</text>
+</svg>
