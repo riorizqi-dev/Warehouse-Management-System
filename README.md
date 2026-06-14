@@ -158,35 +158,35 @@ TheVoid/
 ## 📸 Screenshots
 
 ### Admin Dashboard
-![Dashboard](screenshots/dashboard.svg)
+![Dashboard](screenshots/dashboard.png)
 *Main dashboard showing key metrics and quick actions*
 
 ### Login Page
-![Login](screenshots/login.svg)
+![Login](screenshots/login.png)
 *Secure authentication interface*
 
 ### Product Management
-![Products](screenshots/products.svg)
+![Products](screenshots/products.png)
 *Comprehensive product management with stock tracking*
 
 ### Inventory Overview
-![Inventory](screenshots/inventory.svg)
+![Inventory](screenshots/inventory.png)
 *Real-time inventory monitoring with stock levels*
 
 ### Stock In Operation
-![Stock In](screenshots/stock-in.svg)
+![Stock In](screenshots/stock-in.png)
 *Add new stock to inventory*
 
 ### Stock Out Operation
-![Stock Out](screenshots/stock-out.svg)
+![Stock Out](screenshots/stock-out.png)
 *Process stock outgoing transactions*
 
 ### User Management
-![Users](screenshots/users.svg)
+![Users](screenshots/users.png)
 *Manage system users and roles*
 
 ### Reports
-![Reports](screenshots/reports.svg)
+![Reports](screenshots/reports.png)
 *Generate comprehensive inventory and sales reports*
 
 ## 🚀 Installation
