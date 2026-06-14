@@ -155,39 +155,11 @@ TheVoid/
     └── auth.php
 ```
 
-## 📸 Screenshots
+## 🚀 Demo
 
-### Admin Dashboard
-![Dashboard](screenshots/dashboard.png)
-*Main dashboard showing key metrics and quick actions*
+> **🔗 [Live Demo](https://your-demo-url.com)** — Klik untuk langsung coba aplikasi!
 
-### Login Page
-![Login](screenshots/login.png)
-*Secure authentication interface*
-
-### Product Management
-![Products](screenshots/products.png)
-*Comprehensive product management with stock tracking*
-
-### Inventory Overview
-![Inventory](screenshots/inventory.png)
-*Real-time inventory monitoring with stock levels*
-
-### Stock In Operation
-![Stock In](screenshots/stock-in.png)
-*Add new stock to inventory*
-
-### Stock Out Operation
-![Stock Out](screenshots/stock-out.png)
-*Process stock outgoing transactions*
-
-### User Management
-![Users](screenshots/users.png)
-*Manage system users and roles*
-
-### Reports
-![Reports](screenshots/reports.png)
-*Generate comprehensive inventory and sales reports*
+> **Note:** Login pakai akun admin atau buat akun baru di halaman registrasi.
 
 ## 🚀 Installation
 
